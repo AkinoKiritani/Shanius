@@ -25,10 +25,7 @@ namespace Shanius
             {
                 Console.WriteLine("Bitte gebe den Wert ein");
                 Line = Console.ReadLine();
-                if (Line.Contains(","))
-                {
-                    Line = Line.Replace(",", ".");
-                }
+
                 float.TryParse(Line, out Value);
                 Result = (Value * Tax) + Value;
                 Console.WriteLine("Das Ergebnis ist: {0}", Result);
